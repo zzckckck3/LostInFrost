@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 92e15dbdb84630a45b88f3fbe2c4ee11
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pickupSound: {instanceID: 0}
+  - equipSound: {instanceID: 0}
+  - hammerSound: {instanceID: 0}
+  - axeSound: {instanceID: 0}
+  - pickAxeSound: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
