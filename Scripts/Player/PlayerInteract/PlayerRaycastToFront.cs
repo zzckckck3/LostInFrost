@@ -58,7 +58,8 @@ public class PlayerRaycastToFront : MonoBehaviour
         // 애니메이션 상태 업데이트
         if (isHit && hit.collider.gameObject.layer == canGatherLayer)
         {
-            if (hit.collider.CompareTag("Tree") && nowToolType == ToolType.Axe && !hit.collider.GetComponent<RespawnAnimation>().isRespawn && UserStatusManager.Instance.CanAxe)
+            if (hit.collider.CompareTag("Tree") && nowToolType == ToolType.Axe &&
+                !hit.collider.GetComponent<RespawnAnimation>().isRespawn && UserStatusManager.Instance.CanAxe)
             {
                 // 도끼질 애니메이션 시작
                 anim.SetBool("Axing", true);
@@ -66,7 +67,8 @@ public class PlayerRaycastToFront : MonoBehaviour
                 UserStatusManager.Instance.IsAxe = true;
                 UserStatusManager.Instance.IsPickAxe = false;
             }
-            else if ((hit.collider.CompareTag("Rock") || hit.collider.CompareTag("Iron") || hit.collider.CompareTag("Brimstone")) && nowToolType == ToolType.PickAxe && UserStatusManager.Instance.CanPickAxe)
+            else if ((hit.collider.CompareTag("Rock") || hit.collider.CompareTag("Iron") || hit.collider.CompareTag("Brimstone")) 
+                        && nowToolType == ToolType.PickAxe && UserStatusManager.Instance.CanPickAxe)
             {
                 // 곡괭이질 애니메이션 시작
                 anim.SetBool("Axing", false);
