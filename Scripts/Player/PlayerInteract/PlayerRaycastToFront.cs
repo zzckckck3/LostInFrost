@@ -93,7 +93,7 @@ public class PlayerRaycastToFront : MonoBehaviour
             UserStatusManager.Instance.IsPickAxe = false;
         }
             
-            // 여기에 아마도 건물 상호작용 넣을 듯 루팅을 여기에 넣었는데 조작감이 거지같아서 폐기
+            // 여기에 아마도 건물 상호작용 넣을 듯 루팅을 여기에 넣었는데 조작감이 너무 별로라 폐기
             //else if(hit.collider.gameObject.layer == canRootLayer)
             //{
             //    if (Input.GetKeyDown(KeyCode.F))
